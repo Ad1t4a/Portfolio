@@ -3,115 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adityas | Cybersecurity Portfolio</title>
+    <title>Aditya S | Cybersecurity Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand animated-text" href="#">Aditya S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profile">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conferences">Conferences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header Section -->
-    <header>
+    <header class="py-5 text-center">
         <div class="container">
-            <div class="header-content">
-                <h1 class="animated-text">Adityas</h1>
-                <p class="tagline">Cybersecurity Enthusiast | MSc Graduate | Ethical Hacker</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
+            <h1 class="display-4 animated-text">Aditya S</h1>
+            <p class="lead">Cybersecurity Enthusiast | MSc Graduate | Ethical Hacker</p>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/in/aditya-s-cybersecurity" target="_blank" class="social-icon mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/aditya-s-cyber" target="_blank" class="social-icon mx-2" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://twitter.com/AdityaSCyber" target="_blank" class="social-icon mx-2" title="X"><i class="fab fa-x-twitter fa-2x"></i></a>
             </div>
         </div>
     </header>
 
     <!-- Profile Section -->
-    <section id="profile" class="section">
+    <section id="profile" class="section py-5">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="profile-content">
-                <img src="assets/profile-icon.png" alt="Profile" class="profile-img" id="profile-img">
-                <p>I'm a highly motivated MSc Cybersecurity graduate with a robust foundation in network security, cryptography, and ethical hacking. My analytical mindset and hands-on experience with tools like VirtualBox, Ansible, and VulnHub labs fuel my passion for securing systems. I thrive on tackling challenges and proactively enhancing system integrity.</p>
+            <div class="row align-items-center bg-dark p-4 rounded shadow-sm">
+                <div class="col-md-3 text-center">
+                    <img src="assets/profile-icon.png" alt="Profile" class="profile-img img-fluid rounded-circle" id="profile-img">
+                </div>
+                <div class="col-md-9">
+                    <p>I’m a highly motivated MSc Cybersecurity graduate with expertise in network security, cryptography, and ethical hacking. My hands-on experience includes tools like VirtualBox, Ansible, and VulnHub labs, complemented by a proactive approach to securing systems and an analytical mindset honed through real-world projects.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="section">
+    <section id="courses" class="section py-5">
         <div class="container">
             <h2 class="section-title">Courses Completed</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-year="2023">
-                    <h3>2023</h3>
-                    <ul>
-                        <li><i class="fas fa-lock"></i> Introduction to Darkweb Operations</li>
-                        <li><i class="fas fa-shield-alt"></i> An Introduction to Vulnerability Management</li>
-                        <li><i class="fas fa-search"></i> Introduction to Threat Hunting</li>
-                        <li><i class="fas fa-fingerprint"></i> An Introduction to Digital Forensics</li>
-                        <li><i class="fas fa-network-wired"></i> An Introduction to Network Analysis</li>
-                        <li><i class="fas fa-globe"></i> An Introduction to Open-Source Intelligence</li>
-                    </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card timeline-item mb-4 bg-dark">
+                        <div class="card-body">
+                            <h3 class="card-title">2023</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-lock"></i> Introduction to Darkweb Operations</li>
+                                <li><i class="fas fa-shield-alt"></i> An Introduction to Vulnerability Management</li>
+                                <li><i class="fas fa-search"></i> Introduction to Threat Hunting</li>
+                                <li><i class="fas fa-fingerprint"></i> An Introduction to Digital Forensics</li>
+                                <li><i class="fas fa-network-wired"></i> An Introduction to Network Analysis</li>
+                                <li><i class="fas fa-globe"></i> An Introduction to Open-Source Intelligence</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-item" data-year="2024">
-                    <h3>2024</h3>
-                    <ul>
-                        <li><i class="fas fa-code"></i> Practical Cybersecurity for Cyber Practitioners (NPTEL)</li>
-                        <li><i class="fas fa-user-shield"></i> The Definitive GRC Analyst Master Class (TCM Security)</li>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="card timeline-item mb-4 bg-dark">
+                        <div class="card-body">
+                            <h3 class="card-title">2024</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-code"></i> Practical Cybersecurity for Cyber Practitioners (NPTEL)</li>
+                                <li><i class="fas fa-user-shield"></i> The Definitive GRC Analyst Master Class (TCM Security)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Conferences Section -->
-    <section id="conferences" class="section">
+    <section id="conferences" class="section py-5">
         <div class="container">
             <h2 class="section-title">Conferences & Events</h2>
-            <div class="card-grid">
-                <div class="card"><i class="fas fa-microchip"></i> Bangalore Tech Summit 2023</div>
-                <div class="card"><i class="fas fa-bug"></i> Vulncon 2024</div>
-                <div class="card"><i class="fas fa-users"></i> Null Community Meetup</div>
-                <div class="card"><i class="fas fa-cloud"></i> Cloud Security: Emerging Threats (Symbiosis)</div>
-                <div class="card"><i class="fas fa-laptop-code"></i> Hands-on Digital Forensics</div>
-                <div class="card"><i class="fas fa-exclamation-triangle"></i> SANS 2024 Top Attacks Report</div>
-                <div class="card"><i class="fas fa-eye"></i> SANS 2024 Security Awareness Report</div>
-                <div class="card"><i class="fas fa-database"></i> DFIR Summit 2024</div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-microchip"></i> Bangalore Tech Summit 2023</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-bug"></i> Vulncon 2024</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-users"></i> Null Community Meetup</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-cloud"></i> Cloud Security: Emerging Threats (Symbiosis)</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-laptop-code"></i> Hands-on Digital Forensics</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-exclamation-triangle"></i> SANS 2024 Top Attacks Report</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-eye"></i> SANS 2024 Security Awareness Report</div></div></div>
+                <div class="col"><div class="card h-100 bg-dark"><div class="card-body"><i class="fas fa-database"></i> DFIR Summit 2024</div></div></div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section py-5">
         <div class="container">
             <h2 class="section-title">Personal Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3><i class="fas fa-microchip"></i> IoT DIY Projects</h3>
-                    <p>Designed and built projects including an IR-based line-following robot, a personal NAS on Raspberry Pi 4, basic radio modules, and sensor-based systems (soil moisture, gas, humidity) using Raspberry Pi Pico and Arduino Uno.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card project-card mb-4 bg-dark">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-microchip"></i> IoT DIY Projects</h3>
+                            <p>Designed and built an IR-based line-following robot, a personal NAS on Raspberry Pi 4, basic radio modules, and sensor-based systems (soil moisture, gas, humidity) using Raspberry Pi Pico and Arduino Uno.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity Labs</h3>
-                    <p>Created secure virtual environments with VirtualBox, configured Ansible on Linux, set up vulnerable OS for testing, built VulnHub labs, and compiled a custom Arch Linux distribution for personal use.</p>
+                <div class="col-md-6">
+                    <div class="card project-card mb-4 bg-dark">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-shield-alt"></i> Cybersecurity Labs</h3>
+                            <p>Set up secure virtual environments with VirtualBox, configured Ansible on Linux, installed vulnerable OS for testing, built VulnHub labs, and compiled a custom Arch Linux distribution.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Chatbot Section -->
-    <div id="chatbot">
-        <div id="chat-header">Resume Chatbot <span id="chat-toggle"><i class="fas fa-times"></i></span></div>
-        <div id="chat-body"></div>
-        <input type="text" id="chat-input" placeholder="Ask about my resume...">
-        <button onclick="sendMessage()">Send</button>
+    <!-- Resume Section -->
+    <section id="resume" class="section py-5">
+        <div class="container">
+            <h2 class="section-title">My Resume</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card p-4 bg-dark">
+                        <h3 class="text-center mb-4">Aditya S - Cybersecurity Fresher</h3>
+                        <p><strong>Profile:</strong> MSc Cybersecurity graduate with expertise in network security, cryptography, and ethical hacking.</p>
+                        <p><strong>Courses:</strong> Darkweb Operations, Vulnerability Management, Threat Hunting, Digital Forensics, Network Analysis, OSINT (2023); Practical Cybersecurity (NPTEL), GRC Analyst Master Class (2024).</p>
+                        <p><strong>Conferences:</strong> Bangalore Tech Summit 2023, Vulncon 2024, Null Meetup, SANS 2024 Reports, DFIR Summit 2024, and more.</p>
+                        <p><strong>Projects:</strong> IoT (line-following robot, NAS, sensors); Cybersecurity (VulnHub labs, virtual networks, custom Arch Linux).</p>
+                        <a href="assets/resume.pdf" class="btn btn-info mt-3" download>Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="shadow">
+        <div id="chat-header" class="bg-info text-white p-3">Resume Chatbot <span id="chat-toggle"><i class="fas fa-times"></i></span></div>
+        <div id="chat-body" class="p-3"></div>
+        <div class="input-group p-3">
+            <input type="text" id="chat-input" class="form-control" placeholder="Ask about my resume...">
+            <button class="btn btn-warning" onclick="sendMessage()">Send</button>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Adityas | Crafted with <i class="fas fa-heart"></i> | <a href="#top">Back to Top</a></p>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>© 2025 Aditya S | Crafted with <i class="fas fa-heart text-warning"></i> | <a href="#top" class="text-info">Back to Top</a></p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
